@@ -1,0 +1,20 @@
+AFRAME.registerComponent("create-buttons", {
+    init: function(){
+        // Order Button
+        var button1 = document.createElement("button");
+        button1.innerHTML = "ORDER NOW";
+        button1.setAttribute("id", "order-button");
+        button1.setAttribute("class", "btn btn-warning")
+
+        // Bill Button
+        var button2 = document.createElement("button");
+        button2.innerHTML = "BILL";
+        button2.setAttribute("id", "bill-button");
+        button2.setAttribute("class", "btn btn-warning")
+
+        // Appending Buttons
+        var buttonDiv = document.getElementById("button-div");
+        buttonDiv.appendChild(button1);
+        buttonDiv.appendChild(button2);
+    },
+})
